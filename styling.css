@@ -1,0 +1,444 @@
+.table > tr > th {
+    padding-right: 80px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.header {
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+
+.container {
+    padding-bottom: 60px;
+    padding-left: 7%
+    width:90%;
+    font-family: 'Caveat Brush', cursive;    
+}
+
+.buttonsBar {
+    width:100%;
+    height: 40px;
+    background-color: aquamarine;
+}
+
+.logo {
+    height: 150px;
+    width: 190px;
+    margin-left: 5%;
+}
+
+.logoDiv {
+    padding-top:30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.partyCl {
+    width:30%;
+}
+
+.stateCl {
+    width:30%;
+}
+
+.contactEmail {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content: flex-end;
+    margin-right: 6%;
+    font-size: 20px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+
+.paragraph {
+    padding-bottom: 50px;
+    width:70%;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 18px;
+}
+
+.bar {
+    width: 90%;
+    margin-left: 5%;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.textDiv {
+    width:60%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    font-family: 'Caveat Brush', cursive;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.textDiv1 {
+    width:90%;
+    padding-left: 2%;;
+    font-family: 'Caveat Brush', cursive;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+
+.table table-striped {
+    width:90%;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.container-fluid {
+    background-color: gray;
+}
+
+ul.nav.navbar-nav {
+    background-color: gray;
+}
+
+li.active {
+    background-color: black;
+}
+
+.statesDiv {
+    display: flex;
+    justify-content: flex-end;
+    width:5%;
+    align-items: flex-end; 
+}
+
+.checkbox1 {
+/*    top: 25px;*/
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35px;
+}
+
+form {
+    width: 90%;
+}
+
+.checkBoxTitle {
+    padding-right: 20px;
+}
+
+.bar1 {
+    width:90%;
+    margin-left: 5%;
+}
+
+.bar1_bottom {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.botPannel {
+    height: 50px;
+    padding-top: 15px;
+}
+
+.filterSt {
+    border-style: hidden;
+    display: flex;
+    align-self:flex-end;
+}
+
+
+.dropdown {
+    background-color: gray;
+    text-decoration-color: skyblue;
+}
+
+.homePage {
+    display:flex; 
+    justify-content: space-between;
+}
+
+.homePage1 {
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Caveat Brush', cursive;
+    width:90%;
+}
+
+.homePage2 {
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Caveat Brush', cursive;
+    width:90%;
+    padding-bottom: 70px;
+}
+
+.imgDiv {
+    width:40%;
+    height: 430px;
+}
+
+.imgClass {
+    width:400px;
+    height: 430px;
+}
+
+.collapse{
+    width:100%;
+}
+
+.collapseDiv {
+    width: 90%;
+    padding-bottom: 70px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 18px;
+}
+
+.tableCl1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 90px;
+}
+
+.tableCl2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+
+.tableCl3 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button1:hover {
+    background-color: black;
+}
+
+.dataTables_filter{
+    position: relative;    
+}
+
+.viewMore[aria-expanded="false"]:before {
+    content:"View More";
+}
+
+.viewMore[aria-expanded="true"]:before {
+    content:"View Less";
+}
+
+a.collapseA {
+    font-size: 20px;
+}
+
+.cssload-loader {
+	position: relative;
+	left: calc(50% - 31px);
+	width: 62px;
+	height: 62px;
+	border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	perspective: 780px;
+}
+
+.cssload-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;	
+}
+
+.cssload-inner.cssload-one {
+	left: 0%;
+	top: 0%;
+	animation: cssload-rotate-one 1.15s linear infinite;
+		-o-animation: cssload-rotate-one 1.15s linear infinite;
+		-ms-animation: cssload-rotate-one 1.15s linear infinite;
+		-webkit-animation: cssload-rotate-one 1.15s linear infinite;
+		-moz-animation: cssload-rotate-one 1.15s linear infinite;
+	border-bottom: 3px solid rgb(0,0,0);
+}
+
+.cssload-inner.cssload-two {
+	right: 0%;
+	top: 0%;
+	animation: cssload-rotate-two 1.15s linear infinite;
+		-o-animation: cssload-rotate-two 1.15s linear infinite;
+		-ms-animation: cssload-rotate-two 1.15s linear infinite;
+		-webkit-animation: cssload-rotate-two 1.15s linear infinite;
+		-moz-animation: cssload-rotate-two 1.15s linear infinite;
+	border-right: 3px solid rgb(0,0,0);
+}
+
+.cssload-inner.cssload-three {
+	right: 0%;
+	bottom: 0%;
+	animation: cssload-rotate-three 1.15s linear infinite;
+		-o-animation: cssload-rotate-three 1.15s linear infinite;
+		-ms-animation: cssload-rotate-three 1.15s linear infinite;
+		-webkit-animation: cssload-rotate-three 1.15s linear infinite;
+		-moz-animation: cssload-rotate-three 1.15s linear infinite;
+	border-top: 3px solid rgb(0,0,0);
+}
+
+
+
+
+
+
+
+@keyframes cssload-rotate-one {
+	0% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@-o-keyframes cssload-rotate-one {
+	0% {
+		-o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+	100% {
+		-o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@-ms-keyframes cssload-rotate-one {
+	0% {
+		-ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+	100% {
+		-ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-rotate-one {
+	0% {
+		-webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+	100% {
+		-webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@-moz-keyframes cssload-rotate-one {
+	0% {
+		-moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+	100% {
+		-moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@keyframes cssload-rotate-two {
+	0% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@-o-keyframes cssload-rotate-two {
+	0% {
+		-o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+	100% {
+		-o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@-ms-keyframes cssload-rotate-two {
+	0% {
+		-ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+	100% {
+		-ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-rotate-two {
+	0% {
+		-webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+	100% {
+		-webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@-moz-keyframes cssload-rotate-two {
+	0% {
+		-moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+	100% {
+		-moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@keyframes cssload-rotate-three {
+	0% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}
+
+@-o-keyframes cssload-rotate-three {
+	0% {
+		-o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+	100% {
+		-o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}
+
+@-ms-keyframes cssload-rotate-three {
+	0% {
+		-ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+	100% {
+		-ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-rotate-three {
+	0% {
+		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+	100% {
+		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}
+
+@-moz-keyframes cssload-rotate-three {
+	0% {
+		-moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+	100% {
+		-moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}

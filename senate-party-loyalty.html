@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senate Party Loyalty</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
+
+    <link rel="stylesheet" href="styling.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Gochi+Hand');
+
+    </style>
+</head>
+
+<body id="senate">
+    <div class="logoDiv">
+        <img src="TGIF-logo.jpg" class="logo" alt="image">
+        <div class="contactEmail"><a href="mailto:info@tgif.com"><span class="glyphicon glyphicon-envelope"></span> info@tgif.com</a></div>
+    </div>
+    <div class="bar">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="button1"><a href="index.html" style="color:white">Home</a></li>
+                    <li class="dropdown">
+                        <a style="color:white" href="#">Congress 113<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-page-html.html">House Page</a></li>
+                            <li><a href="senate-page-html.html">Senate Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown1"><a style="color:white" href="#">Attendance<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-attendance.html">House Page</a></li>
+                            <li><a href="senate-attendance.html">Senate Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown2"><a style="color:white" href="#">Party Loyalty<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-party-loyalty.html">House Page</a></li>
+                            <li><a href="senate-party-loyalty.html">Senate Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="homePage1">
+            <div class="textDiv">
+                <div>
+                    <h2 class="header"><strong>Party Loyalty</strong></h2>
+                </div>
+                <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+
+            </div>
+            <div class="tableCl1">
+                <h2>Senate at a glance</h2>
+                <table class="table table-striped" id="firstTable">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>No. of Reps</th>
+                            <th>% Voted with Party</th>
+                        </tr>
+                    </thead>
+                    <tbody id="senate-data">
+                    </tbody>
+                    <script id="user-template" type="text/html">
+                        {{#glance}}
+                        <tr>
+                            <td>{{party}}</td>
+                            <td>{{number_of_people}}</td>
+                            <td>{{votes_with_party_pct}}</td>
+                        </tr>
+                        {{/glance}}
+                    </script>
+                </table>
+                <div class="cssload-loader">
+                    <div class="cssload-inner cssload-one"></div>
+                    <div class="cssload-inner cssload-two"></div>
+                    <div class="cssload-inner cssload-three"></div>
+                </div>
+            </div>
+        </div>
+        <hr style="border-width: 5px">
+        <div class="homePage2">
+            <div class=tableCl2>
+                <h2>Least Loyal (Bottom 10% of Party)</h2>
+                <table class="table table-striped" id="tableId">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>No. Party Votes</th>
+                            <th>% Votes With Party</th>
+                        </tr>
+                    </thead>
+                    <tbody id="senate-data1">
+                    </tbody>
+                    <script id="user-template1" type="text/html">
+                        {{#least}}
+                        <tr>
+                            <td>{{full_name}}</td>
+                            <td>{{number_of_party_votes}}</td>
+                            <td>{{votes_with_party_pct}}</td>
+                        </tr>
+                        {{/least}}
+                    </script>
+                </table>
+                <div class="cssload-loader">
+                    <div class="cssload-inner cssload-one"></div>
+                    <div class="cssload-inner cssload-two"></div>
+                    <div class="cssload-inner cssload-three"></div>
+                </div>
+            </div>
+            <div class="tableCl3">
+                <h2>Most Loyal (Top 10% of Party)</h2>
+                <table class="table table-striped" id="tableId1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>No. Party Votes</th>
+                            <th>% Votes With Party</th>
+                        </tr>
+                    </thead>
+                    <tbody id="senate-data2">
+                    </tbody>
+                    <script id="user-template2" type="text/html">
+                        {{#most}}
+                        <tr>
+                            <td>{{full_name}}</td>
+                            <td>{{number_of_party_votes}}</td>
+                            <td>{{votes_with_party_pct}}</td>
+                        </tr>
+                        {{/most}}
+                    </script>
+                </table>
+                <div class="cssload-loader">
+                    <div class="cssload-inner cssload-one"></div>
+                    <div class="cssload-inner cssload-two"></div>
+                    <div class="cssload-inner cssload-three"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bar1">
+        <nav class="navbar navbar-inverse">
+            <div class="bar1_bottom">
+                <ul class="nav navbar-nav">
+                    <li class="botPannel">
+                        @ 2016 TGIF | All Rights Reserved
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCLQdGgfftdOqwKLOo5lSC3PyKmt4W5xAY",
+    authDomain: "tgif-3ec71.firebaseapp.com",
+    databaseURL: "https://tgif-3ec71.firebaseio.com",
+    projectId: "tgif-3ec71",
+    storageBucket: "",
+    messagingSenderId: "1003729218061"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="hover.js"></script>
+    <script src="party-loyalty-statistics.js"></script>
+</body>
+</html>

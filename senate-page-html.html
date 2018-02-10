@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Senate Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styling.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Gochi+Hand');
+
+    </style>
+    
+    <script src="jquery.colorbox-min.js"></script>
+    
+</head>
+
+<body>
+    <div class="logoDiv">
+        <img src="TGIF-logo.jpg" class="logo" alt="image">
+        <div class="contactEmail"><a href="mailto:info@tgif.com"><span class="glyphicon glyphicon-envelope"></span> info@tgif.com</a></div>
+    </div>
+    <div class="bar">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="button1"><a href="index.html" style="color:white">Home</a></li>
+                    <li class="dropdown">
+                            <a style="color:white" href="#">Congress 113<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-page-html.html">House Page</a></li>
+                            <li><a href="senate-page-html.html">Senate Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown1"><a style="color:white" href="#">Attendance<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-attendance.html">House Page</a></li>
+                            <li><a href="senate-attendance.html">Senate Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown2"><a style="color:white" href="#">Party Loyalty<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-party-loyalty.html">House Page</a></li>
+                            <li><a href="senate-party-loyalty.html">Senate Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="textDiv1">
+            <h2 class="header"><strong>Senators</strong></h2>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod termpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat, non proident, sunt in culpa qui ofFlcia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="container">
+            <div class="checkbox1">
+                <div>
+                        <label><span class="checkBoxTitle">Filter by party:</span></label>
+
+                        <label><input type="checkbox" name="filterName" value="R">Republican</label>
+
+                        <label><input type="checkbox" name="filterName" value="D">Democrat</label>
+
+                        <label><input type="checkbox" name="filterName" value="I">Independent</label>
+                </div>
+                <div class="statesDiv">
+                    <select id="states-filter" class="filterSt"> 
+                            <option value="">State</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MP">MP</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                </div>
+            </div>
+            <table class="table table-striped" id="tableId">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Party</th>
+                        <th>State</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="senate-data">
+                </tbody>
+                <script id="user-template" type="text/html">
+                    {{#members}}
+                    <tr>
+                        <td><a href="{{url}}" class="iframe">{{{full_name}}}</a></td>
+                        <td class="partyCl">{{party}}</td>
+                        <td class="stateCl">{{state}}</td>
+                        <td>{{votes_with_party_pct}}</td>
+                    </tr>
+                    {{/members}}
+                </script>
+            </table>
+            <div class="cssload-loader">
+                <div class="cssload-inner cssload-one"></div>
+                <div class="cssload-inner cssload-two"></div>
+                <div class="cssload-inner cssload-three"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bar1">
+        <nav class="navbar navbar-inverse">
+            <div class="bar1_bottom">
+                <ul class="nav navbar-nav">
+                    <li class="botPannel">
+                        @ 2016 TGIF | All Rights Reserved
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCLQdGgfftdOqwKLOo5lSC3PyKmt4W5xAY",
+    authDomain: "tgif-3ec71.firebaseapp.com",
+    databaseURL: "https://tgif-3ec71.firebaseio.com",
+    projectId: "tgif-3ec71",
+    storageBucket: "",
+    messagingSenderId: "1003729218061"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="pro-congress-113-senate.js"></script>
+    <script src="js-file-for-html.js"></script>
+</body>
+
+</html>
